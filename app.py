@@ -76,6 +76,34 @@ def status():
         "modules": "Active"
     })
 
+@app.route("/laboratory")
+def laboratory_monitoring():
+    return render_template("laboratory_monitoring.html")
+
+
+@app.route("/vitals")
+def vital_signs():
+    return render_template("vital_signs.html")
+
+
+@app.route("/tdm")
+def tdm_dashboard():
+    return render_template("tdm_dashboard.html")
+
+
+@app.route("/sepsis")
+def sepsis_dashboard():
+    return render_template("sepsis_dashboard.html")
+
+
+@app.route("/anticoagulation")
+def anticoagulation_dashboard():
+    return render_template("anticoagulation_dashboard.html")
+
+
+@app.route("/nutrition")
+def nutrition_dashboard():
+    return render_template("nutrition_dashboard.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
