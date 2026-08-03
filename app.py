@@ -3,63 +3,77 @@ from flask import Flask, jsonify, render_template
 app = Flask(__name__)
 
 
-# Home Page
 @app.route("/")
 def home():
     return render_template("index.html")
 
 
-# Main Dashboard
 @app.route("/dashboard")
 def dashboard():
     return render_template("dashboard.html")
 
 
-# Patient Profile
+@app.route("/icu")
+def icu_overview():
+    return render_template("icu_overview.html")
+
+
 @app.route("/patient")
 def patient_profile():
     return render_template("patient_profile.html")
 
 
-# Medication Review
 @app.route("/medications/review")
 def medication_review():
     return render_template("medication_review.html")
 
 
-# Patient API
-@app.route("/patients")
-def patients():
-    return jsonify({
-        "patients": [],
-        "message": "Patient module initialized"
-    })
+@app.route("/interactions")
+def drug_interaction():
+    return render_template("drug_interaction.html")
 
 
-# Medication API
-@app.route("/medications")
-def medications():
-    return jsonify({
-        "medications": [],
-        "message": "Medication module initialized"
-    })
-
-
-# Clinical Alerts API
 @app.route("/alerts")
-def alerts():
-    return jsonify({
-        "alerts": [],
-        "message": "Clinical alerts module initialized"
-    })
+def clinical_alerts():
+    return render_template("clinical_alerts.html")
 
 
-# System Status
+@app.route("/laboratory")
+def laboratory_monitoring():
+    return render_template("laboratory_monitoring.html")
+
+
+@app.route("/vitals")
+def vital_signs():
+    return render_template("vital_signs.html")
+
+
+@app.route("/tdm")
+def tdm_dashboard():
+    return render_template("tdm_dashboard.html")
+
+
+@app.route("/sepsis")
+def sepsis_dashboard():
+    return render_template("sepsis_dashboard.html")
+
+
+@app.route("/anticoagulation")
+def anticoagulation_dashboard():
+    return render_template("anticoagulation_dashboard.html")
+
+
+@app.route("/nutrition")
+def nutrition_dashboard():
+    return render_template("nutrition_dashboard.html")
+
+
 @app.route("/status")
 def status():
     return jsonify({
         "system": "ClinRx-ICU-CCU",
-        "status": "Running"
+        "status": "Running",
+        "modules": "Active"
     })
 
 
