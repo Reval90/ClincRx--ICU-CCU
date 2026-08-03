@@ -34,5 +34,9 @@ def alerts():
 def dashboard():
     return render_template("dashboard.html")
 
+@app.route("/patient")
+def patient_profile():
+    return render_template("patient_profile.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
