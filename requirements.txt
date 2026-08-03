@@ -1,6 +1,5 @@
 # ClinRx-ICU-CCU Dependencies
 
-Python
 Flask
 SQLAlchemy
 Pandas
