@@ -1,54 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>ClinRx ICU Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ClinRx ICU-CCU Dashboard</title>
+
+<style>
+
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f8fb;
+    color:#203040;
+}
+
+.sidebar {
+    position:fixed;
+    width:240px;
+    height:100%;
+    background:#12355B;
+    color:white;
+    padding:25px;
+}
+
+.sidebar h2 {
+    color:#7ee7d9;
+}
+
+.sidebar a {
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px 0;
+}
+
+.main {
+    margin-left:280px;
+    padding:30px;
+}
+
+.header {
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px #ddd;
+}
+
+.cards {
+    display:flex;
+    gap:20px;
+    margin-top:25px;
+    flex-wrap:wrap;
+}
+
+.card {
+    background:white;
+    padding:25px;
+    width:200px;
+    border-radius:15px;
+    box-shadow:0 4px 15px #ddd;
+}
+
+.card h2 {
+    color:#0a8f8f;
+}
+
+
+table {
+    width:100%;
+    margin-top:30px;
+    background:white;
+    border-collapse:collapse;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th {
+    background:#12355B;
+    color:white;
+    padding:15px;
+}
+
+td {
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+.alert {
+    color:#c62828;
+    font-weight:bold;
+}
+
+
+</style>
+
 </head>
+
 
 <body>
 
-<h1>ClinRx-ICU-CCU Dashboard</h1>
 
-<h2>Clinical Pharmacist Workspace</h2>
+<div class="sidebar">
+
+<h2>🩺 ClinRx</h2>
+
+<p>ICU / CCU</p>
 
 <hr>
 
-<h3>Patient Overview</h3>
+<a href="#">Dashboard</a>
+<a href="#">Patients</a>
+<a href="#">Medication Review</a>
+<a href="#">Drug Interactions</a>
+<a href="#">Clinical Alerts</a>
+<a href="#">Laboratory Monitoring</a>
+<a href="#">Sepsis Protocol</a>
+<a href="#">TDM</a>
+<a href="#">Nutrition</a>
 
-<table border="1">
+</div>
+
+
+
+<div class="main">
+
+
+<div class="header">
+
+<h1>Clinical Pharmacist Workspace</h1>
+
+<p>
+ICU / CCU Medication Management & Clinical Decision Support System
+</p>
+
+</div>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+<h2>24</h2>
+<p>Active ICU Patients</p>
+</div>
+
+
+<div class="card">
+<h2 class="alert">5</h2>
+<p>Critical Alerts</p>
+</div>
+
+
+<div class="card">
+<h2>12</h2>
+<p>Medication Reviews</p>
+</div>
+
+
+<div class="card">
+<h2>8</h2>
+<p>Pending Interventions</p>
+</div>
+
+
+</div>
+
+
+
+<h2>Patient Monitoring</h2>
+
+
+<table>
+
 <tr>
-    <th>Patient ID</th>
-    <th>Diagnosis</th>
-    <th>Status</th>
+<th>Patient ID</th>
+<th>Diagnosis</th>
+<th>Status</th>
+<th>Action</th>
 </tr>
 
+
 <tr>
-    <td>---</td>
-    <td>---</td>
-    <td>Monitoring</td>
+<td>ICU-001</td>
+<td>Septic Shock</td>
+<td>Monitoring</td>
+<td>Review</td>
 </tr>
+
+
+<tr>
+<td>ICU-002</td>
+<td>Acute MI</td>
+<td>Critical</td>
+<td>Review</td>
+</tr>
+
 
 </table>
 
-<hr>
 
-<h3>Clinical Modules</h3>
+</div>
 
-<ul>
-    <li>Medication Review</li>
-    <li>Drug Interaction Alerts</li>
-    <li>Laboratory Monitoring</li>
-    <li>Vital Signs Monitoring</li>
-    <li>Dose Adjustment Support</li>
-</ul>
-
-<hr>
-
-<h3>Pharmacist Actions</h3>
-
-<button>Add Intervention</button>
-<button>Review Medications</button>
-<button>Generate Report</button>
 
 </body>
 
