@@ -1,0 +1,6 @@
+Drug,Class,Indication,Monitoring
+Norepinephrine,Vasopressor,Septic Shock,MAP HR
+Vancomycin,Antibiotic,MRSA Infection,AUC MIC Renal Function
+Heparin,Anticoagulant,VTE Prevention,aPTT Platelets
+Propofol,Sedation,ICU Sedation,Triglycerides BP
+Furosemide,Diuretic,Fluid Overload,Electrolytes Renal Function
