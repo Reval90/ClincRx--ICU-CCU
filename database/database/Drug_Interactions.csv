@@ -1,0 +1,7 @@
+Drug A,Drug B,Interaction Type,Clinical Significance,Monitoring
+Clopidogrel,PPI (Omeprazole),Drug Interaction,Reduced antiplatelet effect,Consider alternative PPI
+Apixaban,Clarithromycin,Drug Interaction,Increased bleeding risk,Monitor bleeding
+Rivaroxaban,Clarithromycin,Drug Interaction,Increased anticoagulant effect,Monitor bleeding
+Warfarin,Metronidazole,Drug Interaction,Increased INR risk,Monitor INR
+Vancomycin,Aminoglycosides,Drug Interaction,Increased nephrotoxicity,Monitor renal function
+Heparin,NSAIDs,Drug Interaction,Increased bleeding risk,Monitor bleeding
